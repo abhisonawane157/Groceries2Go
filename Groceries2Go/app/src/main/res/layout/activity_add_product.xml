@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_rect01"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Add Product"
+            android:textStyle="bold"
+            android:padding="10dp"
+
+
+            />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back_white"
+            android:background="@null"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        app:layout_constraintBottom_toBottomOf="@id/rl1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="60dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="0dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_add_gray"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="155dp"
+                    android:id="@+id/add_img"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/close_black"
+                    android:visibility="gone"
+                    android:layout_marginTop="155dp"
+                    android:id="@+id/del_img"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edsid"
+                android:hint="Seller ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray01"
+                android:enabled="false"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/shape_rect02"
+                android:drawableStart="@drawable/ic_money_gray"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPhonetic"
+                android:padding="10dp"
+                android:text=""
+                app:layout_constraintTop_toBottomOf="@id/edPrice"
+                tools:layout_editor_absoluteX="4dp" />
+            <EditText
+                android:id="@+id/edpid"
+                android:textColorHint="@color/colorGray01"
+                android:hint="Product ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/shape_rect02"
+                android:drawableStart="@drawable/ic_money_gray"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPhonetic"
+                android:padding="10dp"
+                android:text=""
+                app:layout_constraintTop_toBottomOf="@id/edPrice"
+                tools:layout_editor_absoluteX="4dp" />
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/colorGray01"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_rect02"
+                android:drawableStart="@drawable/ic_title_gray"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/edDetails"
+                android:hint="Details"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColorHint="@color/colorGray01"
+                android:inputType="textPersonName|textCapWords"
+                android:text=""
+
+                android:background="@drawable/shape_rect02"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/ic_title_gray"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edCategory"
+                android:hint="Category"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="4dp"
+                android:textColorHint="@color/colorGray01"
+                android:background="@drawable/shape_rect02"
+                android:drawableStart="@drawable/ic_money_gray"
+
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:text=""
+                tools:layout_editor_absoluteX="4dp" />
+
+            <EditText
+                android:id="@+id/edQuantity"
+                android:textColor="@color/black"
+                android:hint="Quantity e.g Kg, g etc"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/colorGray01"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/shape_rect02"
+                android:drawableStart="@drawable/ic_cart_gray"
+
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:text=""
+                tools:layout_editor_absoluteX="4dp" />
+
+            <EditText
+                android:id="@+id/edPrice"
+                android:hint="Price"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/shape_rect02"
+                android:drawableStart="@drawable/ic_money_gray"
+
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:text=""
+                tools:layout_editor_absoluteX="4dp" />
+
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/oval_btn"
+                android:text="Add "
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

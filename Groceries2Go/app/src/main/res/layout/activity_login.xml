@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rl1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_rect01">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="25dp"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_marginLeft="10dp"
+                android:transitionName="imageview1Trans"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back_white"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/userName"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Login"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/rl1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rdUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="#A89C9C"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_marginRight="30dp"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rdSeller"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:textColor="#A89C9C"
+            android:layout_height="wrap_content"
+            android:text="Seller"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edId"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rgType"
+        android:hint="ID"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A89C9C"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:background="@drawable/shape_rect02"
+        android:inputType="textPhonetic"
+        android:drawablePadding="2dp"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edId"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textColorHint="#A89C9C"
+        android:drawableStart="@drawable/ic_mail_gray"
+        android:background="@drawable/shape_rect02"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edEmail"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textColorHint="#A89C9C"
+        android:drawableStart="@drawable/ic_lock_gray"
+        android:textColor="@color/black"
+        android:background="@drawable/shape_rect02"
+android:inputType="textPassword"
+
+        android:drawablePadding="5dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+
+        android:textColor="#A89C9C"
+        app:layout_constraintTop_toBottomOf="@id/edPassword"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+       android:background="@drawable/oval_btn"
+
+        app:layout_constraintTop_toBottomOf="@id/tvForgotPass"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not have account? Register"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

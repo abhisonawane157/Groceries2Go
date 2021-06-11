@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "267746820465",
+    "firebase_url": "https://database-1cc09.firebaseio.com",
+    "project_id": "database-1cc09",
+    "storage_bucket": "database-1cc09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267746820465:android:c7dc8d768f59bb1f32f6d0",
+        "android_client_info": {
+          "package_name": "com.example.groceries2go"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267746820465-9jdf3bsee8ctbb9a21pf8gha7gov2e8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpkwGV2T6_PWA9aJ5M_G-dLVIBQZ4KuSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267746820465-9jdf3bsee8ctbb9a21pf8gha7gov2e8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267746820465:android:fa03187984228abe32f6d0",
+        "android_client_info": {
+          "package_name": "com.my.database"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267746820465-9jdf3bsee8ctbb9a21pf8gha7gov2e8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpkwGV2T6_PWA9aJ5M_G-dLVIBQZ4KuSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267746820465-9jdf3bsee8ctbb9a21pf8gha7gov2e8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267746820465:android:917684c52ce2a27f32f6d0",
+        "android_client_info": {
+          "package_name": "com.my.primaryaddress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267746820465-9jdf3bsee8ctbb9a21pf8gha7gov2e8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpkwGV2T6_PWA9aJ5M_G-dLVIBQZ4KuSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267746820465-9jdf3bsee8ctbb9a21pf8gha7gov2e8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
